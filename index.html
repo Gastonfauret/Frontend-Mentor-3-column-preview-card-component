@@ -13,23 +13,161 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    main {
+      display: flex;
+      margin-top: 24vh;
+    }
+
+    img {
+      width: 5vh;
+      margin-left: 4vh;
+      margin-top: -0vh;
+    }
+
+    .sedans {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 27vh;
+      height: 43vh;
+      background-color: hsl(31, 77%, 52%);
+      border-radius: 0.5vh 0vh 0vh 0.5vh;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+
+    .suvs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 27vh;
+      height: 43vh;
+      background-color: hsl(184, 100%, 22%);
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+
+    .luxury {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 27vh;
+      height: 43vh;
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0vh 0.5vh 0.5vh 0vh;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+
+    h1 {
+      font-family: 'Big Shoulders Display', cursive;
+      color: hsla(0, 0%, 100%, 0.75);
+      font-weight: 500;
+      margin-left: 4vh;
+      margin-top: -2vh;
+    }
+
+    h2 {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 13px;
+      color: hsla(0, 0%, 100%, 0.75);
+      font-weight: 500;
+      margin-left: 4vh;
+      margin-top: -5vh;
+      line-height: 2.5vh;
+    }
+
+    button {
+      width: 13vh;
+      height: 4.5vh;
+      border-radius: 3vh;
+      border: 0px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 700;
+      margin-left: 4vh;
+    }
+
+    .sedans-btn {
+      color: hsl(31, 77%, 52%);
+    }
+
+    .suvs-btn {
+      color: hsl(184, 100%, 22%);
+    }
+
+    .luxury-btn {
+      color: hsl(179, 100%, 13%);;
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 3vh;}
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
   </style>
 </head>
 <body>
-  
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
 
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
+  <main>
+    <div class="sedans">
+      <img src="./images/icon-sedans.svg" alt="" srcset="">
+      <h1>
+        SEDANS
+      </h1>
+      <h2>
+        Choose a sedan for its<br>
+        affordability and excellent<br>
+        fuel economy. Ideal for<br>
+        cruising in the city 
+        or on<br>
+        your next road trip.
+      </h2>  
+      <button class="sedans-btn">Learn More</button>  
+    </div>    
 
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
+    <div class="suvs">
+      <img src="./images/icon-suvs.svg" alt="" srcset="">
+      <h1>
+        SUVS
+      </h1>
+      <h2>
+        Take an SUV for its spacious<br>
+        interior, power, and<br>
+        versatility. Perfect for your<br>
+        next family vacation and<br>
+        off-road adventures.
+      </h2>
+      <button class="suvs-btn">Learn More</button> 
+    </div>
+    
+    <div class="luxury">
+      <img src="./images/icon-luxury.svg" alt="" srcset="">
+      <h1>
+        LUXURY
+      </h1>
+      <h2>
+        Cruise in the best car brands <br>
+        without the bloated prices. <br>
+        Enjoy the enhanced comfort <br>
+        of a luxury rental and arrive <br>
+        in style.
+      </h2>
+      <button class="luxury-btn">Learn More</button> 
+    </div>
+        
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
